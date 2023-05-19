@@ -1,0 +1,123 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+.head{
+  width: 50%;
+  margin: 20px auto;
+}
+.head h1{
+  font-size: 3vw;
+  color: #010619;
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-shadow: 0 10px 20px rgba(0, 0, 0, .2);
+  position: relative;
+  margin-bottom: 20px;
+}
+
+h1::after{
+  content: " ";
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 3px;
+  width: 90px;
+  background-color: #010619;
+  border-radius: 10px;
+}
+
+
+main{
+  padding: 30px;
+  text-align: center;
+}
+form{
+  width: 50%;
+  margin: 20px auto;
+}
+form input{
+  padding: 12px 20px;
+  border: none;
+  background-color: #c1c4c24e;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: 400;
+}
+form input:focus{
+  outline: none;
+}
+form input[type='submit']{
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  color: #010619;
+  cursor: pointer;
+  transition: all .3s ease;
+}
+form input[type='submit']:hover{
+  background-color: #010619;
+  color: #fff;
+}
+
+.country-card{
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-template-rows: repeat(100, auto);
+  row-gap: 30px;
+  column-gap: 25px;
+  text-align: left;
+
+
+  width: 90%;
+  margin: 30px auto;
+}
+.uni-container{
+  display: flex;
+  align-items: flex-start;
+  box-shadow: 2px 10px 20px rgba(0, 0, 0, .2);
+  padding: 20px;
+  border-radius: 10px;
+  justify-content: flex-start;
+  width: 100%;
+  overflow-y: hidden;
+}
+
+.uni{
+  padding: 12px;
+margin-left: 10px;
+border-left: 2px solid #011d06;
+}
+.uni h2{
+  font-weight: 400;
+  color: #010619;
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+.uni a{
+  font-size: 14px;
+  display: block;
+  margin: 7px 0;
+  text-decoration: none;
+  color: #011d06;
+  transition: all .3s;
+}
+.uni a:hover{
+  color: purple;
+}
+.symbol{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #011d06;
+  color: #fff;
+
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  justify-content: center;
+}
