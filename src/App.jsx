@@ -43,10 +43,12 @@ function App() {
         <input type="text" value={searchVal} onChange={(e) => setSearchVal(e.target.value)}/>
         <input type="submit" value="Submit" />
       </form>
+
       <div className="country-card">
       {
         unis.map((dat, index) =>{
           return(
+            {unis.length}
             
             <div key={index} className="uni-container">
               <span className='symbol'>{dat.alpha_two_code}</span>
